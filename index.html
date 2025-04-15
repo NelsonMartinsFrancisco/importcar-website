@@ -2,27 +2,57 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <title>ImportCar.pt</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
-        h1 { color: #333; }
-        .carro { background: #fff; margin: 10px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .marca { font-weight: bold; }
-        .preco { color: green; }
-    </style>
+  <meta charset="UTF-8" />
+  <title>ImportCar.pt - Carros da Bélgica para Portugal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; }
+    header { background: #202020; color: white; padding: 20px; text-align: center; }
+    .content { padding: 20px; }
+    h2 { color: #2c3e50; }
+    .cars { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+    .car { background: white; padding: 10px; border-radius: 8px; box-shadow: 0 0 6px rgba(0,0,0,0.1); }
+    .car img { width: 100%; border-radius: 6px; }
+    .car h3 { margin: 10px 0 5px; }
+    .car p { margin: 5px 0; }
+    .btn { display: inline-block; margin-top: 10px; padding: 10px 15px; background: green; color: white; text-decoration: none; border-radius: 5px; }
+    footer { text-align: center; padding: 20px; font-size: 14px; background: #eee; margin-top: 40px; }
+  </style>
 </head>
 <body>
+  <header>
     <h1>ImportCar.pt</h1>
-    <p>Carros importados da Bélgica para Portugal com verificação mecânica e financiamento acessível.</p>
+    <p>Carros verificados e entregues em Portugal com possibilidade de financiamento</p>
+  </header>
 
-    <div class="carro"><span class="marca">Mercedes Classe A 2017</span> - 145.000 km - Diesel - <span class="preco">€13.900</span></div>
-    <div class="carro"><span class="marca">Mercedes CLA 2018</span> - 120.000 km - Diesel - <span class="preco">€16.800</span></div>
-    <div class="carro"><span class="marca">BMW Série 1 2016</span> - 150.000 km - Diesel - <span class="preco">€12.750</span></div>
-    <div class="carro"><span class="marca">BMW Série 3 2017</span> - 140.000 km - Diesel - <span class="preco">€14.500</span></div>
-    <div class="carro"><span class="marca">Audi A3 2016</span> - 155.000 km - Diesel - <span class="preco">€13.400</span></div>
-    <div class="carro"><span class="marca">Audi A4 2017</span> - 138.000 km - Diesel - <span class="preco">€15.300</span></div>
-    <div class="carro"><span class="marca">Volkswagen Golf 2015</span> - 160.000 km - Diesel - <span class="preco">€10.900</span></div>
-    <div class="carro"><span class="marca">Volkswagen Passat 2016</span> - 145.000 km - Diesel - <span class="preco">€11.800</span></div>
+  <div class="content">
+    <h2>Mercedes</h2>
+    <div class="cars">
+      <div class="car"><img src="https://via.placeholder.com/300x200?text=Mercedes+A180" /><h3>Mercedes A180 CDI</h3><p>2015 · 115.000 km · Diesel</p><p><strong>€11.900</strong></p><a class="btn" href="https://wa.me/32487567952" target="_blank">Mais info</a></div>
+      <div class="car"><img src="https://via.placeholder.com/300x200?text=Mercedes+C220" /><h3>Mercedes C220</h3><p>2016 · 125.000 km · Diesel</p><p><strong>€13.900</strong></p><a class="btn" href="https://wa.me/32487567952" target="_blank">Mais info</a></div>
+    </div>
+
+    <h2>BMW</h2>
+    <div class="cars">
+      <div class="car"><img src="https://via.placeholder.com/300x200?text=BMW+Série+1" /><h3>BMW Série 1</h3><p>2017 · 130.000 km · Diesel</p><p><strong>€12.500</strong></p><a class="btn" href="https://wa.me/32487567952" target="_blank">Mais info</a></div>
+      <div class="car"><img src="https://via.placeholder.com/300x200?text=BMW+320d" /><h3>BMW 320d Touring</h3><p>2016 · 140.000 km · Diesel</p><p><strong>€13.800</strong></p><a class="btn" href="https://wa.me/32487567952" target="_blank">Mais info</a></div>
+    </div>
+
+    <h2>Audi</h2>
+    <div class="cars">
+      <div class="car"><img src="https://via.placeholder.com/300x200?text=Audi+A3" /><h3>Audi A3 Sportback</h3><p>2016 · 120.000 km · Diesel</p><p><strong>€12.900</strong></p><a class="btn" href="https://wa.me/32487567952" target="_blank">Mais info</a></div>
+      <div class="car"><img src="https://via.placeholder.com/300x200?text=Audi+A4" /><h3>Audi A4</h3><p>2017 · 135.000 km · Diesel</p><p><strong>€14.200</strong></p><a class="btn" href="https://wa.me/32487567952" target="_blank">Mais info</a></div>
+    </div>
+
+    <h2>Volkswagen</h2>
+    <div class="cars">
+      <div class="car"><img src="https://via.placeholder.com/300x200?text=VW+Golf" /><h3>VW Golf 1.6 TDI</h3><p>2015 · 128.000 km · Diesel</p><p><strong>€10.800</strong></p><a class="btn" href="https://wa.me/32487567952" target="_blank">Mais info</a></div>
+      <div class="car"><img src="https://via.placeholder.com/300x200?text=VW+Passat" /><h3>VW Passat Variant</h3><p>2016 · 118.000 km · Diesel</p><p><strong>€11.900</strong></p><a class="btn" href="https://wa.me/32487567952" target="_blank">Mais info</a></div>
+    </div>
+  </div>
+
+  <footer>
+    ImportCar.pt © 2025 — Todos os direitos reservados
+  </footer>
 </body>
 </html>
